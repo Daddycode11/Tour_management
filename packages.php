@@ -4,6 +4,80 @@
 	<div class="d-flex w-100 justify-content-center">
 		<hr class="border-warning" style="border:3px solid" width="15%">
 	</div>
+	
+<!-- Cultural-Themed Categories Section -->
+<div class="row text-center mb-5">
+  <div class="col-md-3 mb-3">
+    <div class="border p-4 h-100 shadow-lg bg-white position-relative cultural-card">
+      <img src="assets/img/icons/landscape-icon.png" class="mb-3" width="50" alt="Tourist Spot Icon">
+      <h5 class="mb-0" style="font-family: 'Merienda', cursive; color: #6b3f27;">Tourist Spots</h5>
+      <div class="cultural-frame-top"></div>
+      <div class="cultural-frame-bottom"></div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-3">
+    <div class="border p-4 h-100 shadow-lg bg-white position-relative cultural-card">
+      <img src="assets/img/icons/hotel-icon.png" class="mb-3" width="50" alt="Hotel Icon">
+      <h5 class="mb-0" style="font-family: 'Merienda', cursive; color: #6b3f27;">Hotel Accommodation</h5>
+      <div class="cultural-frame-top"></div>
+      <div class="cultural-frame-bottom"></div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-3">
+    <div class="border p-4 h-100 shadow-lg bg-white position-relative cultural-card">
+      <img src="assets/img/icons/food-icon.png" class="mb-3" width="50" alt="Restaurant Icon">
+      <h5 class="mb-0" style="font-family: 'Merienda', cursive; color: #6b3f27;">Restaurants</h5>
+      <div class="cultural-frame-top"></div>
+      <div class="cultural-frame-bottom"></div>
+    </div>
+  </div>
+  <div class="col-md-3 mb-3">
+    <div class="border p-4 h-100 shadow-lg bg-white position-relative cultural-card">
+      <img src="assets/img/icons/beach-icon.png" class="mb-3" width="50" alt="Beach Icon">
+      <h5 class="mb-0" style="font-family: 'Merienda', cursive; color: #6b3f27;">Beaches</h5>
+      <div class="cultural-frame-top"></div>
+      <div class="cultural-frame-bottom"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+.cultural-card {
+  border: 2px solid #d2b48c;
+  border-radius: 12px;
+  background-image: url('assets/img/patterns/ethnic-weave.png');
+  background-size: cover;
+  background-blend-mode: lighten;
+  font-weight: bold;
+}
+
+.cultural-card img {
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+
+.cultural-frame-top, .cultural-frame-bottom {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(45deg, #8B4513, #8B4513 5px, #DEB887 5px, #DEB887 10px);
+}
+
+.cultural-frame-top {
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cultural-frame-bottom {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+
 	<div class="w-100">
 		<?php
 		$packages = $conn->query("SELECT * FROM `packages` order by rand() ");

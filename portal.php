@@ -11,14 +11,14 @@
 <header class="masthead">
 	<div class="container">
 		<div class="masthead-subheading">Welcome To Cali-Tour</div>
-		<div class="masthead-heading text-uppercase">Explore our Tour Packages</div>
+		<div class="masthead-heading text-uppercase">Explore our Calintaan Packages</div>
 		<a class="btn btn-primary btn-xl text-uppercase" href="#home">View Tours</a>
 	</div>
 </header>
 <!-- Services-->
 <section class="page-section bg-dark" id="home">
 	<div class="container">
-		<h2 class="text-center">Tour Packages</h2>
+		<h2 class="text-center">Total Getaway Package</h2>
 	<div class="d-flex w-100 justify-content-center">
 		<hr class="border-warning" style="border:3px solid" width="15%">
 	</div>

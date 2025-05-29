@@ -26,7 +26,7 @@
                 <tr>
                     <th>#</th>
                     <th>DateTime</th>
-                    <th>User</th>
+                    <th>Name</th>
                     <th>Package</th>
                     <th>Schedule</th>
                     <th>Status</th>

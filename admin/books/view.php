@@ -12,25 +12,55 @@ if(isset($_GET['id'])){
         display:none;
     }
 </style>
-<p><b>Package:</b> <?php echo $title ?></p>
-<p><b>Details:</b> <span class="truncate"><?php echo strip_tags(stripslashes(html_entity_decode($title))) ?></span></p>
-<p><b>Schedule:</b> <?php echo date("F d, Y",strtotime("schedule")) ?></p>
-<form action="" id="book-status">
-    <input type="hidden" name="id" value="<?php echo $id ?>">
-    <div class="form-group">
-        <label for="" class="control-label">Status</label>
-        <select name="status" id="" class="select custom-select">
-            <option value="0" <?php echo $status == 0 ? "selected" : '' ?>>Pending</option>
-            <option value="1" <?php echo $status == 1 ? "selected" : '' ?>>Confimed</option>
-            <option value="2" <?php echo $status == 2 ? "selected" : '' ?>>Cancelled</option>
-            <option value="3" <?php echo $status == 3 ? "selected" : '' ?>>Done</option>
-        </select>
+<div class="modal-body">
+  
+    <div class="mb-2">
+      <p><strong>Package:</strong> <?php echo $title ?></p>
     </div>
-</form>
+
+    <div class="mb-2">
+      <p><strong>Details:</strong> 
+        <span class="text-muted"><?php echo strip_tags(stripslashes(html_entity_decode($title))) ?></span>
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <p><strong>Schedule:</strong> 
+        <span class="text-primary"><?php echo date("F d, Y", strtotime($schedule)) ?></span>
+      </p>
+    </div>
+    <div class="mb-2">
+      <p><strong>Time:</strong> 
+        <span class="text-info"><?php echo date("h:i A", strtotime($time)) ?></span>
+      </p>
+    </div>
+
+    <div class="mb-3">
+      <p><strong>Number of Pax:</strong> 
+        <span class="text-dark"><?php echo $pax ?></span>
+      </p>
+    </div>
+  </div>
+</div>
+
+    <form action="" id="book-status">
+      <input type="hidden" name="id" value="<?php echo $id ?>">
+      <div class="form-group">
+        <label for="status" class="font-weight-bold">Update Status</label>
+        <select name="status" id="status" class="custom-select">
+          <option value="0" <?php echo $status == 0 ? "selected" : '' ?>>Pending</option>
+          <option value="1" <?php echo $status == 1 ? "selected" : '' ?>>Confirmed</option>
+          <option value="2" <?php echo $status == 2 ? "selected" : '' ?>>Cancelled</option>
+          <option value="3" <?php echo $status == 3 ? "selected" : '' ?>>Done</option>
+        </select>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="modal-footer">
-<button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Update</button>
-<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+  <button type="button" class="btn btn-primary" id="submit" onclick="$('#uni_modal form').submit()">Update</button>
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 </div>
 
 <script>

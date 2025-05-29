@@ -28,7 +28,7 @@
             </form>
         </div>
         <div class="col-lg-7">
-        <h3 class="text-center">Create New Account</h3>
+        <h3 class="text-center">Register New Account</h3>
         <hr class='border-primary'>
             <form action="" id="registration">
                 <div class="form-group">

@@ -1,1 +1,127 @@
-<p>This is a Sample About Content.</p><p><span style="color: rgb(0, 0, 0); font-family: "Open Sans", Arial, sans-serif; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel molestie ante. Morbi volutpat vestibulum nibh, vitae tempor metus sodales ac. Praesent et ornare lorem. Nullam id sem sed dolor feugiat finibus eu imperdiet erat. Suspendisse sed est eu enim lacinia efficitur eu eget sem. Curabitur feugiat, ipsum vel eleifend tincidunt, lacus metus tristique sem, non vehicula purus ipsum eget magna. Phasellus feugiat molestie nibh, sit amet elementum nulla volutpat sit amet. Integer a consequat metus, eget consectetur urna. Phasellus sagittis tincidunt egestas.</span><br></p>
+<!-- About Us Section with Map -->
+<section class="about-us-section py-5 px-3 px-md-5" style="background: #2fe079">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="text-muted">
+        Discover Calintaan — Where Nature Meets Adventure
+      </p>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 about-card shadow-sm">
+          <div class="card-body text-center">
+            <i class="fas fa-map-marked-alt fa-2x mb-3 text-primary"></i>
+            <h5 class="card-title">Our Mission</h5>
+            <p class="card-text">
+              Promoting the hidden beauty of Calintaan through eco-friendly,
+              community-driven tours celebrating nature and culture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 about-card shadow-sm">
+          <div class="card-body text-center">
+            <i class="fas fa-hiking fa-2x mb-3 text-success"></i>
+            <h5 class="card-title">Tours & Spots</h5>
+            <p class="card-text">
+              Explore Dumahon Mountain, Laylayan Falls, and more — curated to
+              showcase the best of Calintaan’s natural beauty.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 about-card shadow-sm">
+          <div class="card-body text-center">
+            <i class="fas fa-users fa-2x mb-3 text-warning"></i>
+            <h5 class="card-title">Community Driven</h5>
+            <p class="card-text">
+              We collaborate with local guides to empower communities and ensure
+              tourism benefits every barangay.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Embedded Map -->
+    <div class="map-container shadow rounded overflow-hidden">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.2768033486273!2d121.10687047492135!3d12.573190987684027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bdc4ff104cb4f7%3A0x62a8aebeb07cc088!2sCalintaan%2C%20Occidental%20Mindoro!5e0!3m2!1sen!2sph!4v1700000000000"
+        width="100%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+  </div>
+</section>
+<style>
+  .about-us-section {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #1b2430;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  .about-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    border: none;
+  }
+
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1b2430;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
